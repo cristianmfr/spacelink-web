@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root,
+body,
+html,
+.App {
+    @apply h-full;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollable-tab-content {
+    overflow-y: auto;
+    max-height: calc(100vh - 150px);
+}
